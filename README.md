@@ -8,6 +8,12 @@ A minimal macOS app that lets you select and set local images as your desktop wa
 - Unselect Folders
 - Categorize Wallpapers
 
+## TO DO
+
+- Let user chose what folder to get images from
+- store all of those folders
+- display images 
+- 
 ## 📦 Requirements
 
 - macOS 12.0+
