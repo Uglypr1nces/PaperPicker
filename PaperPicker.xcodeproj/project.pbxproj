@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8FC90C332DD8AA60004CA613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FC90C1C2DD8AA5F004CA613 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FC90C232DD8AA5F004CA613;
+			remoteInfo = PaperPicker;
+		};
+		8FC90C3D2DD8AA60004CA613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FC90C1C2DD8AA5F004CA613 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FC90C232DD8AA5F004CA613;
+			remoteInfo = PaperPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FC90C242DD8AA5F004CA613 /* PaperPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC90C322DD8AA60004CA613 /* PaperPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC90C3C2DD8AA60004CA613 /* PaperPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8FC90C262DD8AA5F004CA613 /* PaperPicker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PaperPicker;
+			sourceTree = "<group>";
+		};
+		8FC90C352DD8AA60004CA613 /* PaperPickerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PaperPickerTests;
+			sourceTree = "<group>";
+		};
+		8FC90C3F2DD8AA60004CA613 /* PaperPickerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PaperPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FC90C212DD8AA5F004CA613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC90C2F2DD8AA60004CA613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC90C392DD8AA60004CA613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FC90C1B2DD8AA5F004CA613 = {
+			isa = PBXGroup;
+			children = (
+				8FC90C262DD8AA5F004CA613 /* PaperPicker */,
+				8FC90C352DD8AA60004CA613 /* PaperPickerTests */,
+				8FC90C3F2DD8AA60004CA613 /* PaperPickerUITests */,
+				8FC90C252DD8AA5F004CA613 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FC90C252DD8AA5F004CA613 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FC90C242DD8AA5F004CA613 /* PaperPicker.app */,
+				8FC90C322DD8AA60004CA613 /* PaperPickerTests.xctest */,
+				8FC90C3C2DD8AA60004CA613 /* PaperPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FC90C232DD8AA5F004CA613 /* PaperPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC90C462DD8AA60004CA613 /* Build configuration list for PBXNativeTarget "PaperPicker" */;
+			buildPhases = (
+				8FC90C202DD8AA5F004CA613 /* Sources */,
+				8FC90C212DD8AA5F004CA613 /* Frameworks */,
+				8FC90C222DD8AA5F004CA613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8FC90C262DD8AA5F004CA613 /* PaperPicker */,
+			);
+			name = PaperPicker;
+			packageProductDependencies = (
+			);
+			productName = PaperPicker;
+			productReference = 8FC90C242DD8AA5F004CA613 /* PaperPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FC90C312DD8AA60004CA613 /* PaperPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC90C492DD8AA60004CA613 /* Build configuration list for PBXNativeTarget "PaperPickerTests" */;
+			buildPhases = (
+				8FC90C2E2DD8AA60004CA613 /* Sources */,
+				8FC90C2F2DD8AA60004CA613 /* Frameworks */,
+				8FC90C302DD8AA60004CA613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FC90C342DD8AA60004CA613 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8FC90C352DD8AA60004CA613 /* PaperPickerTests */,
+			);
+			name = PaperPickerTests;
+			packageProductDependencies = (
+			);
+			productName = PaperPickerTests;
+			productReference = 8FC90C322DD8AA60004CA613 /* PaperPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FC90C3B2DD8AA60004CA613 /* PaperPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC90C4C2DD8AA60004CA613 /* Build configuration list for PBXNativeTarget "PaperPickerUITests" */;
+			buildPhases = (
+				8FC90C382DD8AA60004CA613 /* Sources */,
+				8FC90C392DD8AA60004CA613 /* Frameworks */,
+				8FC90C3A2DD8AA60004CA613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FC90C3E2DD8AA60004CA613 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8FC90C3F2DD8AA60004CA613 /* PaperPickerUITests */,
+			);
+			name = PaperPickerUITests;
+			packageProductDependencies = (
+			);
+			productName = PaperPickerUITests;
+			productReference = 8FC90C3C2DD8AA60004CA613 /* PaperPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FC90C1C2DD8AA5F004CA613 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					8FC90C232DD8AA5F004CA613 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					8FC90C312DD8AA60004CA613 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 8FC90C232DD8AA5F004CA613;
+					};
+					8FC90C3B2DD8AA60004CA613 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 8FC90C232DD8AA5F004CA613;
+					};
+				};
+			};
+			buildConfigurationList = 8FC90C1F2DD8AA5F004CA613 /* Build configuration list for PBXProject "PaperPicker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FC90C1B2DD8AA5F004CA613;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8FC90C252DD8AA5F004CA613 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FC90C232DD8AA5F004CA613 /* PaperPicker */,
+				8FC90C312DD8AA60004CA613 /* PaperPickerTests */,
+				8FC90C3B2DD8AA60004CA613 /* PaperPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FC90C222DD8AA5F004CA613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC90C302DD8AA60004CA613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC90C3A2DD8AA60004CA613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FC90C202DD8AA5F004CA613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC90C2E2DD8AA60004CA613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC90C382DD8AA60004CA613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FC90C342DD8AA60004CA613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FC90C232DD8AA5F004CA613 /* PaperPicker */;
+			targetProxy = 8FC90C332DD8AA60004CA613 /* PBXContainerItemProxy */;
+		};
+		8FC90C3E2DD8AA60004CA613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FC90C232DD8AA5F004CA613 /* PaperPicker */;
+			targetProxy = 8FC90C3D2DD8AA60004CA613 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8FC90C442DD8AA60004CA613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FC90C452DD8AA60004CA613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8FC90C472DD8AA60004CA613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PaperPicker/PaperPicker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uglyprincess.PaperPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8FC90C482DD8AA60004CA613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PaperPicker/PaperPicker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uglyprincess.PaperPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8FC90C4A2DD8AA60004CA613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uglyprincess.PaperPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperPicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaperPicker";
+			};
+			name = Debug;
+		};
+		8FC90C4B2DD8AA60004CA613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uglyprincess.PaperPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperPicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaperPicker";
+			};
+			name = Release;
+		};
+		8FC90C4D2DD8AA60004CA613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uglyprincess.PaperPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PaperPicker;
+			};
+			name = Debug;
+		};
+		8FC90C4E2DD8AA60004CA613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uglyprincess.PaperPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PaperPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FC90C1F2DD8AA5F004CA613 /* Build configuration list for PBXProject "PaperPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC90C442DD8AA60004CA613 /* Debug */,
+				8FC90C452DD8AA60004CA613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC90C462DD8AA60004CA613 /* Build configuration list for PBXNativeTarget "PaperPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC90C472DD8AA60004CA613 /* Debug */,
+				8FC90C482DD8AA60004CA613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC90C492DD8AA60004CA613 /* Build configuration list for PBXNativeTarget "PaperPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC90C4A2DD8AA60004CA613 /* Debug */,
+				8FC90C4B2DD8AA60004CA613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC90C4C2DD8AA60004CA613 /* Build configuration list for PBXNativeTarget "PaperPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC90C4D2DD8AA60004CA613 /* Debug */,
+				8FC90C4E2DD8AA60004CA613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FC90C1C2DD8AA5F004CA613 /* Project object */;
+}
