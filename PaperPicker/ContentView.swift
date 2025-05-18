@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import AppKit
+import Foundation
+
 
 struct ContentView: View {
+    @State private var images: [String] = []
     @State private var paths: [String] = []
     @State private var showFileImporter = false
 
@@ -18,19 +22,23 @@ struct ContentView: View {
                 showFileImporter = true
             }
             
-            Button("Test"){
-                print(getImages(path: "/Users/uglyprincess/Pictures/Wallpaper"))
+            ForEach(images, id: \.self) { image in
+                if let nsImage = NSImage(contentsOfFile: image) {
+                    Image(nsImage: nsImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
+                }
             }
+            
 
-            if !paths.isEmpty {
-                Text(paths.joined(separator: "\n"))
-            }
         }
         .padding()
         .fileImporter(isPresented: $showFileImporter, allowedContentTypes: [.directory], onCompletion: { result in
             switch result{
             case .success(let urls):
-                print(getImages(path: urls.absoluteString))
+                paths.append(urls.path)
+                images = getImages(path: urls.path)
                 
             case .failure(let error):
                 print("Error: \(error)")
