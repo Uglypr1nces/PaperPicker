@@ -8,22 +8,21 @@
 import Foundation
 
 func getImages(path: String) -> [String] {
-    let imageExtensions = ["jpg", "jpeg", "png", "heic", "webp"]
     let fileManager = FileManager.default
+    let allowedExtensions = ["jpg", "jpeg", "png", "heic", "bmp", "gif", "tiff"]
+    var imagePaths: [String] = []
 
-    do {
-        let files = try fileManager.contentsOfDirectory(atPath: path)
-        let fullPaths = files
-            .filter { file in
-                let ext = URL(fileURLWithPath: file).pathExtension.lowercased()
-                return imageExtensions.contains(ext)
+    if let items = try? fileManager.contentsOfDirectory(atPath: path) {
+        for item in items {
+            let fullPath = (path as NSString).appendingPathComponent(item)
+            let ext = (item as NSString).pathExtension.lowercased()
+            if allowedExtensions.contains(ext) {
+                imagePaths.append(fullPath)
             }
-            .map { "\(path)/\($0)" }
-
-        return fullPaths
-    } catch {
-        print("Error reading folder: \(error)")
-        return []
+        }
     }
+
+    return imagePaths
 }
+
 

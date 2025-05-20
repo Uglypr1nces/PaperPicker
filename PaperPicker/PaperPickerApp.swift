@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import AppKit
 
-@main
-struct PaperPickerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct WindowAccessor: NSViewRepresentable {
+    var callback: (NSWindow?) -> Void
+
+    func makeNSView(context: Context) -> NSView {
+        let view = NSView()
+        DispatchQueue.main.async {
+            self.callback(view.window)
         }
+        return view
     }
+
+    func updateNSView(_ nsView: NSView, context: Context) {}
 }

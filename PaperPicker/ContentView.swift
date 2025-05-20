@@ -5,7 +5,7 @@ import AppKit
 struct VisualEffectView: NSViewRepresentable {
     func makeNSView(context: Context) -> NSVisualEffectView {
         let view = NSVisualEffectView()
-        view.material = .sidebar // Options: .hudWindow, .popover, etc.
+        view.material = .ultraDark  // Stronger blur effect
         view.blendingMode = .behindWindow
         view.state = .active
         return view
@@ -24,7 +24,7 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            VisualEffectView()
+            VisualEffectView() // Blurred background
 
             VStack(spacing: 20) {
                 HStack {
@@ -56,6 +56,7 @@ struct ContentView: View {
                     Button("Load Saved Images") {
                         if let url = saveFileURL {
                             images = getStoredImages(fileURL: url)
+                            newImages = images
                         }
                     }
                 }
@@ -69,12 +70,21 @@ struct ContentView: View {
                                 .frame(width: 200, height: 200)
                                 .cornerRadius(10)
                                 .padding()
+                                .onTapGesture {
+                                    setDesktopWallpaper(imagePath)
+                                }
+                                .contextMenu {
+                                    Button("Delete Image") {
+                                        deleteImage(imagePath)
+                                    }
+                                }
                         }
                     }
                 }
             }
             .padding()
         }
+        .frame(minWidth: 900, minHeight: 300) // Window size hint
         .fileImporter(
             isPresented: $showFileImporter,
             allowedContentTypes: [.directory],
@@ -83,7 +93,6 @@ struct ContentView: View {
                 case .success(let url):
                     paths.append(url.path)
                     let allImages = getImages(path: url.path)
-
                     let newOnes = allImages.filter { !images.contains($0) }
                     newImages.append(contentsOf: newOnes)
                     images.append(contentsOf: newOnes)
@@ -97,6 +106,28 @@ struct ContentView: View {
                 }
             }
         )
+    }
+
+    // MARK: - Helpers
+
+    func deleteImage(_ imagePath: String) {
+        newImages.removeAll { $0 == imagePath }
+        images.removeAll { $0 == imagePath }
+
+        if let fileURL = saveFileURL {
+            _ = storeImages(fileURL: fileURL, images: images)
+        }
+    }
+
+    func setDesktopWallpaper(_ imagePath: String) {
+        guard let screen = NSScreen.main else { return }
+        let url = URL(fileURLWithPath: imagePath)
+
+        do {
+            try NSWorkspace.shared.setDesktopImageURL(url, for: screen, options: [:])
+        } catch {
+            print("Failed to set wallpaper: \(error)")
+        }
     }
 }
 

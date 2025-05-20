@@ -10,24 +10,26 @@ import Cocoa
 
 import Foundation
 
-func storeImages(fileURL: URL, images: [String]) -> Bool {
+func getStoredImages(fileURL: URL) -> [String] {
     do {
-        let text = images.joined(separator: "\n")
-        try text.write(to: fileURL, atomically: true, encoding: .utf8)
-        return true
+        let contents = try String(contentsOf: fileURL)
+        return contents
+            .split(separator: "\n")
+            .map { String($0) }
+            .filter { !$0.isEmpty }
     } catch {
-        print("Error writing to file: \(error)")
-        return false
+        print("Failed to read from file: \(error)")
+        return []
     }
 }
 
-func getStoredImages(fileURL: URL) -> [String] {
+func storeImages(fileURL: URL, images: [String]) -> Bool {
+    let content = images.joined(separator: "\n")
     do {
-        let content = try String(contentsOf: fileURL, encoding: .utf8)
-        let imagePaths = content.components(separatedBy: .newlines).filter { !$0.isEmpty }
-        return imagePaths
+        try content.write(to: fileURL, atomically: true, encoding: .utf8)
+        return true
     } catch {
-        print("Error reading file: \(error)")
-        return []
+        print("Failed to write to file: \(error)")
+        return false
     }
 }
