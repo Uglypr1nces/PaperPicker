@@ -54,11 +54,20 @@ struct ContentView: View {
                     }
 
                     Button("Load Saved Images") {
-                        if let url = saveFileURL {
+                        let panel = NSOpenPanel()
+                        panel.title = "Select a saved image file"
+                        panel.allowedFileTypes = ["txt"]
+                        panel.canChooseFiles = true
+                        panel.canChooseDirectories = false
+                        panel.allowsMultipleSelection = false
+                        
+                        if panel.runModal() == .OK, let url = panel.url {
+                            saveFileURL = url
                             images = getStoredImages(fileURL: url)
                             newImages = images
                         }
                     }
+
                 }
 
                 ScrollView(.horizontal) {
