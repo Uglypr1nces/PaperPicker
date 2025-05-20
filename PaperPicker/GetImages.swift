@@ -7,34 +7,23 @@
 
 import Foundation
 
-let fm = FileManager.default
-
 func getImages(path: String) -> [String] {
-    var images: [String] = []
+    let imageExtensions = ["jpg", "jpeg", "png", "heic", "webp"]
+    let fileManager = FileManager.default
 
     do {
-        let files = try fm.contentsOfDirectory(atPath: path)
-
-        for file in files {
-            let lowerExt = (file as NSString).pathExtension.lowercased()
-            if ["png", "jpg", "jpeg"].contains(lowerExt) {
-                images.append((path as NSString).appendingPathComponent(file))
+        let files = try fileManager.contentsOfDirectory(atPath: path)
+        let fullPaths = files
+            .filter { file in
+                let ext = URL(fileURLWithPath: file).pathExtension.lowercased()
+                return imageExtensions.contains(ext)
             }
-        }
+            .map { "\(path)/\($0)" }
 
+        return fullPaths
     } catch {
-        print("Failed to read contents of directory: \(error)")
-    }
-
-    return images
-}
-
-
-
-func getFileExtension(filename: String) -> String {
-    if filename.split(separator: ".").count > 1 {
-        return String(filename.split(separator: ".").last!)
-    } else {
-        return ""
+        print("Error reading folder: \(error)")
+        return []
     }
 }
+
